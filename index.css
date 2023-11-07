@@ -61,6 +61,9 @@ input.button-submit {
         line-height: 35px;
         margin: 5px 0;
     }
+    body{
+        padding: 15px;
+    }
 }
 
 /* Extra small devices */
@@ -80,5 +83,12 @@ input.button-submit {
     }
     h1 {
         font-size: 1em;
+    }
+    h2{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    body{
+        padding: 10px;
     }
 }
