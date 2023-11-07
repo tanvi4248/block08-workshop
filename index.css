@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px; /* css unit 1 */
+    background: antiquewhite;
+}
+.image-gallery-01 {
+    display: grid; /* use grid */
+    overflow: hidden;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    gap: 10px;
+    margin: 0 0 20px;
+}
+.image-gallery-01 img,
+.image-gallery-02 img {
+    max-width: 100%;
+}
+.img.image4 {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    z-index: -1; /* z-index */
+}
+h2 {
+    color: #fff;
+    font:600 40px/45px 'Courier New', Courier, monospace;
+    margin: 10px 0;
+}
+form {
+    background: #000;
+    padding: 3rem; /* css unit 2 */
+    text-align: left;
+    border: 6px solid deepskyblue; /* shorthand */
+    place-self: center;
+}
+form > label { /* hierarchical selector */
+    color: wheat;
+}
+input.fname,
+input.email {
+    margin: 0 0 1em; /* css unit 3 */
+}
+.image-gallery-02 {
+    text-align: center;
+    display: grid;
+}
+input.button-submit {
+    padding: 10px 15px;
+    border-radius: 25px;
+    background: blanchedalmond;
+    cursor: pointer;
+}
+/* Responsive */
+/* Medium devices */
+@media (max-width: 1024px) and (min-width:768px){
+    h1 {
+        font-size: 1.7em;
+    }
+    h2{
+        font-size: 30px;
+        line-height: 35px;
+        margin: 5px 0;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    .image-gallery-01 {
+        display: block;
+    }
+    form label {
+        width: 100%;
+        float: left;
+    }
+    form {
+        padding: 1rem;
+    }
+    .image-gallery-02 {
+        padding: 0 10PX;
+    }
+    h1 {
+        font-size: 1em;
+    }
+}
